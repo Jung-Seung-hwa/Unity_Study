@@ -89,6 +89,8 @@
 협업 방식
 - 역할 분담 없이 전원이 동일한 챕터 진행
 - 코드 비교를 통한 상호 피드백
+<img width="852" height="798" alt="스크린샷 2025-11-28 005155" src="https://github.com/user-attachments/assets/7715bc1d-8e66-40cd-b624-fcfc9a5100cf" />
+<img width="847" height="637" alt="스크린샷 2025-11-28 005219" src="https://github.com/user-attachments/assets/2b964a64-ce2c-4e94-a123-a04cfd161ff2" />
 
 코드 공유 방식
 - Discord를 통한 실시간 코드 공유
