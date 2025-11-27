@@ -7,17 +7,17 @@
 
 ## 📌 목차 (Table of Contents)
 
-- 📖 [프로젝트 소개](#📖-1-프로젝트-소개-project-overview)
-- 🎯 [스터디 목표](#🎯-2-스터디-목표-study-goals)
-- 📚 [사용 교재](#📚-3-사용-교재-study-materials)
-- 🧩 [스터디 운영 방식](#🧩-4-스터디-운영-방식-study-workflow)
-- ⚙️ [구현 진행 현황](#⚙️-5-구현-진행-현황-implementation-progress)
-- 🎮 [게임 프로젝트 목록](#🎮-6-게임-프로젝트-목록-game-projects)
-- 🛠 [기술 스택](#🛠-7-기술-스택-tech-stack)
-- 🗂 [프로젝트 구조](#🗂-8-프로젝트-구조-project-structure)
-- 👥 [팀 소개](#👥-9-팀-소개-team)
-- 📌 [포트폴리오 활용 목적](#📌-10-포트폴리오-활용-목적-portfolio-purpose)
-- 🚀 [향후 계획](#🚀-11-향후-계획-future-plans)
+- 1️⃣ [프로젝트 소개](#1-프로젝트-소개-project-overview)
+- 2️⃣ [스터디 목표](#2-스터디-목표-study-goals)
+- 3️⃣ [사용 교재](#3-사용-교재-study-materials)
+- 4️⃣ [스터디 운영 방식](#4-스터디-운영-방식-study-workflow)
+- 5️⃣ [구현 진행 현황](#5-구현-진행-현황-implementation-progress)
+- 6️⃣ [게임 프로젝트 목록](#6-게임-프로젝트-목록-game-projects)
+- 7️⃣ [기술 스택](#7-기술-스택-tech-stack)
+- 8️⃣ [프로젝트 구조](#8-프로젝트-구조-project-structure)
+- 9️⃣ [팀 소개](#9-팀-소개-team)
+- 🔟 [포트폴리오 활용 목적](#10-포트폴리오-활용-목적-portfolio-purpose)
+- ✅ [향후 계획](#11-향후-계획-future-plans)
 
 ---
 
@@ -70,9 +70,6 @@
   </tr>
 </table>
 
-
-
-
 ---
 
 ## 🧩 4. 스터디 운영 방식 (Study Workflow)
@@ -89,8 +86,19 @@
 협업 방식
 - 역할 분담 없이 전원이 동일한 챕터 진행
 - 코드 비교를 통한 상호 피드백
-<img width="852" height="798" alt="스크린샷 2025-11-28 005155" src="https://github.com/user-attachments/assets/7715bc1d-8e66-40cd-b624-fcfc9a5100cf" />
-<img width="847" height="637" alt="스크린샷 2025-11-28 005219" src="https://github.com/user-attachments/assets/2b964a64-ce2c-4e94-a123-a04cfd161ff2" />
+
+### 실제 협업 화면
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/user-attachments/assets/7715bc1d-8e66-40cd-b624-fcfc9a5100cf" width="400">
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/2b964a64-ce2c-4e94-a123-a04cfd161ff2" width="400">
+    </td>
+  </tr>
+</table>
 
 코드 공유 방식
 - Discord를 통한 실시간 코드 공유
@@ -164,6 +172,7 @@
 - 챕터별 구현 내용 정리
 - 게임 플레이 영상 및 이미지 추가
 - 코드 리팩터링 및 구조 개선
+
 
 
 
