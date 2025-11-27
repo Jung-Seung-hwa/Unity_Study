@@ -52,9 +52,17 @@
 
 ## 📚 3. 사용 교재 (Study Materials)
 
-- 교재명 : 레트로의 유니티 6 게임 프로그래밍 에센스
-- 출판사 : 한빛미디어
-![B8935295136_l](https://github.com/user-attachments/assets/666799cb-0e7b-4bb8-9e3f-7c93391ba74f)
+<table>
+  <tr>
+    <td width="220">
+      <img src="https://github.com/user-attachments/assets/666799cb-0e7b-4bb8-9e3f-7c93391ba74f" width="200">
+    </td>
+    <td>
+      <p>교재명 : 레트로의 유니티 6 게임 프로그래밍 에센스</p>
+      <p>출판사 : 한빛미디어</p>
+    </td>
+  </tr>
+</table>
 
 
 선택 이유
