@@ -58,10 +58,12 @@
       <img src="https://github.com/user-attachments/assets/666799cb-0e7b-4bb8-9e3f-7c93391ba74f" width="200">
     </td>
     <td>
-      <p><strong>교재명</strong> : 레트로의 유니티 6 게임 프로그래밍 에센스</p>
-      <p><strong>출판사</strong> : 한빛미디어</p>
+      <p><strong><span style="font-size:18px;">교재명</span></strong> : 레트로의 유니티 6 게임 프로그래밍 에센스</p>
+      <p><strong><span style="font-size:18px;">출판사</span></strong> : 한빛미디어</p>
+
       <br>
-      <p><strong>선택 이유</strong></p>
+
+      <p><strong><span style="font-size:17px;">선택 이유</span></strong></p>
       <ul>
         <li>게임 개발에 대한 공통 관심사</li>
         <li>실습 중심 학습을 통해 직접 구현하며 이해하기 위함</li>
@@ -69,6 +71,7 @@
     </td>
   </tr>
 </table>
+
 
 ---
 
