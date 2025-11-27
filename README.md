@@ -7,20 +7,21 @@
 
 ## 📌 목차 (Table of Contents)
 
-- 1️⃣ [프로젝트 소개](#1-프로젝트-소개-project-overview)
-- 2️⃣ [스터디 목표](#2-스터디-목표-study-goals)
-- 3️⃣ [사용 교재](#3-사용-교재-study-materials)
-- 4️⃣ [스터디 운영 방식](#4-스터디-운영-방식-study-workflow)
-- 5️⃣ [구현 진행 현황](#5-구현-진행-현황-implementation-progress)
-- 6️⃣ [게임 프로젝트 목록](#6-게임-프로젝트-목록-game-projects)
-- 7️⃣ [기술 스택](#7-기술-스택-tech-stack)
-- 8️⃣ [프로젝트 구조](#8-프로젝트-구조-project-structure)
-- 9️⃣ [팀 소개](#9-팀-소개-team)
-- 🔟 [포트폴리오 활용 목적](#10-포트폴리오-활용-목적-portfolio-purpose)
-- ✅ [향후 계획](#11-향후-계획-future-plans)
+- 1. [프로젝트 소개](#section-1)
+- 2. [스터디 목표](#section-2)
+- 3. [사용 교재](#section-3)
+- 4. [스터디 운영 방식](#section-4)
+- 5. [구현 진행 현황](#section-5)
+- 6. [게임 프로젝트 목록](#section-6)
+- 7. [기술 스택](#section-7)
+- 8. [프로젝트 구조](#section-8)
+- 9. [팀 소개](#section-9)
+- 10. [포트폴리오 활용 목적](#section-10)
+- 11. [향후 계획](#section-11)
 
 ---
 
+<a id="section-1"></a>
 ## 📖 1. 프로젝트 소개 (Project Overview)
 
 - Unity 엔진과 C# 언어를 활용한 게임 개발 스터디 프로젝트
@@ -41,6 +42,7 @@
 
 ---
 
+<a id="section-2"></a>
 ## 🎯 2. 스터디 목표 (Study Goals)
 
 - Unity 엔진 기본 구조 이해
@@ -50,6 +52,7 @@
 
 ---
 
+<a id="section-3"></a>
 ## 📚 3. 사용 교재 (Study Materials)
 
 <table>
@@ -72,6 +75,7 @@
 
 ---
 
+<a id="section-4"></a>
 ## 🧩 4. 스터디 운영 방식 (Study Workflow)
 
 진행 시간
@@ -107,6 +111,7 @@
 
 ---
 
+<a id="section-5"></a>
 ## ⚙️ 5. 구현 진행 현황 (Implementation Progress)
 
 - 현재 학습 및 구현 진행 중
@@ -118,6 +123,7 @@
 
 ---
 
+<a id="section-6"></a>
 ## 🎮 6. 게임 프로젝트 목록 (Game Projects)
 
 - 실제 구현된 게임만 순차적으로 정리
@@ -130,6 +136,7 @@
 
 ---
 
+<a id="section-7"></a>
 ## 🛠 7. 기술 스택 (Tech Stack)
 
 - Unity
@@ -139,6 +146,7 @@
 
 ---
 
+<a id="section-8"></a>
 ## 🗂 8. 프로젝트 구조 (Project Structure)
 
 - Assets
@@ -147,6 +155,7 @@
 
 ---
 
+<a id="section-9"></a>
 ## 👥 9. 팀 소개 (Team)
 
 - 역할 구분 없이 모든 팀원이 동일한 학습 흐름으로 참여
@@ -159,6 +168,7 @@
 
 ---
 
+<a id="section-10"></a>
 ## 📌 10. 포트폴리오 활용 목적 (Portfolio Purpose)
 
 - 새로운 기술에 빠르게 적응하는 역량 증명
@@ -167,6 +177,7 @@
 
 ---
 
+<a id="section-11"></a>
 ## 🚀 11. 향후 계획 (Future Plans)
 
 - 챕터별 구현 내용 정리
