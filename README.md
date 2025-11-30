@@ -142,10 +142,8 @@
 -  **싱글톤 패턴**으로 GameManager 전역 접근 구조 학습
 -  씬 설정 & 빌드를 통해 **최종 게임 실행 파일 제작**
 
-**플레이 영상**
-
-[![Play](https://img.shields.io/badge/▶️_Play-Video-blue)](https://github.com/user-attachments/assets/b56ed807-4a50-437a-9c1d-b9411728220c)
-
+**플레이 영상**  
+👉 [영상 보기](https://github.com/user-attachments/assets/b56ed807-4a50-437a-9c1d-b9411728220c)
 
 ---
 
