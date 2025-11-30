@@ -143,7 +143,11 @@
 -  씬 설정 & 빌드를 통해 **최종 게임 실행 파일 제작**
 
 **플레이 영상**
-- https://github.com/user-attachments/assets/a37bb7e8-efbc-44b4-bfad-0e99b8c0d994 https://github.com/user-attachments/assets/13bec807-cc83-4d0a-8fa5-ad8e8547196a
+https://github.com/user-attachments/assets/016ddf31-dfb0-477d-ac85-34c90bfd266e
+
+https://github.com/user-attachments/assets/3308993e-dda1-48f4-99c2-72ec4e0d8733
+
+
 
 
 ---
