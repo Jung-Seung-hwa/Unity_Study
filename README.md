@@ -230,7 +230,11 @@ https://github.com/user-attachments/assets/3c9f873d-8725-4ca6-a834-ad315009275a
 **🎥 플레이 영상**  
 
 
-https://github.com/user-attachments/assets/d77e0aad-310a-435c-b57e-f1d30c8882e3
+
+Uploading Uni_Run.mp4…
+
+
+
 
 
 
