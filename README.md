@@ -143,7 +143,7 @@
 -  씬 설정 & 빌드를 통해 **최종 게임 실행 파일 제작**
 
 **플레이 영상**
-- `https://github.com/user-attachments/assets/fc17e6b2-0a28-4a29-b398-4e835c94303f`
+- https://github.com/user-attachments/assets/fc17e6b2-0a28-4a29-b398-4e835c94303f
 ---
 
 ### 🏃 유니런 : 2D 러너
