@@ -155,7 +155,11 @@
 ---
 
 **🎥 플레이 영상**  
-👉 https://github.com/user-attachments/assets/7846e1be-4626-4a80-aa25-e0f68b5174c5  
+
+
+https://github.com/user-attachments/assets/3c9f873d-8725-4ca6-a834-ad315009275a
+
+
 
 ---
 
@@ -224,7 +228,11 @@
 ---
 
 **🎥 플레이 영상**  
-👉 https://github.com/user-attachments/assets/a7fd3681-369c-4fc3-87f5-f715f5d40c22  
+
+
+https://github.com/user-attachments/assets/d77e0aad-310a-435c-b57e-f1d30c8882e3
+
+
 
 ---
 
