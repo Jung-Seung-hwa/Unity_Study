@@ -13,11 +13,10 @@
 2. [스터디 목표](#section-2)  
 3. [사용 교재](#section-3)  
 4. [스터디 운영 방식](#section-4)  
-5. [게임 프로젝트 목록](#section-6)  
-6. [기술 스택](#section-7)  
-7. [팀 소개](#section-8)  
-8. [포트폴리오 활용 목적](#section-9)  
-9. [향후 계획](#section-10)
+5. [게임 프로젝트 목록](#section-5)  
+6. [기술 스택](#section-6)  
+7. [포트폴리오 활용 목적](#section-7)  
+8. [향후 계획](#section-8)
 
 ---
 
@@ -108,7 +107,7 @@
 
 ---
 
-<a id="section-6"></a>
+<a id="section-5"></a>
 ## 🎮 5. 게임 프로젝트 목록 (Game Projects)
 
 아래는 스터디를 통해 구현한 게임 프로젝트와 각 챕터에서 학습한 내용을 정리한 것이다.
@@ -229,30 +228,20 @@
 
 ---
 
-<a id="section-7"></a>
+<a id="section-6"></a>
 ## 🛠 6. 기술 스택 (Tech Stack)
 
-- Unity  
-- C#  
-- Git / GitHub  
-- Discord  
+- **Unity (2D/3D), C#**
+- Rigidbody · Collider · Raycast  
+- Animator · Animator Controller  
+- Coroutine · FSM(유한 상태 머신)  
+- Sprite Sheet · Animation · TextMeshPro  
+- Git / GitHub · Discord
+
 
 ---
 
 <a id="section-8"></a>
-## 👥 7. 팀 소개 (Team)
-
-- 역할 구분 없이 모든 팀원이 동일한 학습 흐름으로 참여  
-
-**팀원**
-- 류현석  
-- 정승화  
-- 김태완  
-- 임주환  
-
----
-
-<a id="section-9"></a>
 ## 📌 8. 포트폴리오 활용 목적 (Portfolio Purpose)
 
 - 새로운 기술에 빠르게 적응하는 역량 증명  
@@ -261,7 +250,7 @@
 
 ---
 
-<a id="section-10"></a>
+<a id="section-9"></a>
 ## 🚀 9. 향후 계획 (Future Plans)
 
 - 추가 챕터 학습 및 게임 프로젝트 확장  
