@@ -143,11 +143,8 @@
 -  씬 설정 & 빌드를 통해 **최종 게임 실행 파일 제작**
 
 **플레이 영상**
-https://github.com/user-attachments/assets/016ddf31-dfb0-477d-ac85-34c90bfd266e
 
-https://github.com/user-attachments/assets/3308993e-dda1-48f4-99c2-72ec4e0d8733
-
-
+[![Play](https://img.shields.io/badge/▶️_Play-Video-blue)](https://github.com/user-attachments/assets/b56ed807-4a50-437a-9c1d-b9411728220c)
 
 
 ---
@@ -159,7 +156,8 @@ https://github.com/user-attachments/assets/3308993e-dda1-48f4-99c2-72ec4e0d8733
 - 장애물을 피하면서 최대 거리 갱신 목표
 
 **플레이 영상**
-- https://github.com/user-attachments/assets/69fbcbeb-8c33-4286-b7d1-f24cc946b818
+
+https://github.com/user-attachments/assets/a7fd3681-369c-4fc3-87f5-f715f5d40c22
 
 ---
 
@@ -202,14 +200,4 @@ https://github.com/user-attachments/assets/3308993e-dda1-48f4-99c2-72ec4e0d8733
 - 게임 플레이 영상 및 이미지 추가
 - 코드 리팩터링 및 구조 개선
 
-
-
-
-
-
-## 닷지 : 3D 총알 피하기
-https://github.com/user-attachments/assets/9129e243-8041-43e6-ac04-bb45ce413737
-
-## 유니런 : 2D 러너
-https://github.com/user-attachments/assets/69fbcbeb-8c33-4286-b7d1-f24cc946b818
 
