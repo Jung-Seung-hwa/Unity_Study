@@ -348,16 +348,15 @@ https://github.com/user-attachments/assets/7799d45a-40a1-4e64-9998-0ae4c7f8672b
   <tr>
     <td align="center">
       <b>Before</b><br>
-      <img src="https://github.com/user-attachments/assets/3fd98c33-2791-48db-a564-7a01ec1e8394" width="350"><br>
-      <sub>능력치는 다르지만 색상은 모두 동일</sub>
+      <img src="https://github.com/user-attachments/assets/3fd98c33-2791-48db-a564-7a01ec1e8394" width="350">
     </td>
     <td align="center">
       <b>After</b><br>
-      <img src="https://github.com/user-attachments/assets/39417a98-0dca-495e-9aa9-222bcd50f6f8" width="350"><br>
-      <sub>좀비 타입별로 색상이 명확하게 구분</sub>
+      <img src="https://github.com/user-attachments/assets/39417a98-0dca-495e-9aa9-222bcd50f6f8" width="350">
     </td>
   </tr>
 </table>
+
 
 ### 🛠 해결 방법  
 - Setup() 메서드를 타입별 색상을 **외부에서 전달받는 방식**으로 수정
