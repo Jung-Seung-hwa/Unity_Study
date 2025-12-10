@@ -312,6 +312,7 @@ PlayerShooter 스크립트 내부의 **gunPivot 변수가 인스펙터에서 연
 - 생성되었지만 AI가 움직이지 않음  
 - NavMesh 밖에서 생성되어 공중에 떠있거나 낙하
 
+- 아래와 같은 콘솔 에러 로그가 반복적으로 출력됨
 <img width="611" alt="스폰 오류" src="https://github.com/user-attachments/assets/a9c0307a-41a0-4ee4-92ae-050e55fd7796" />
 
 ### 📹 문제 상황 영상 
@@ -347,15 +348,16 @@ https://github.com/user-attachments/assets/7799d45a-40a1-4e64-9998-0ae4c7f8672b
   <tr>
     <td align="center">
       <b>Before</b><br>
-      <img src="https://github.com/user-attachments/assets/3fd98c33-2791-48db-a564-7a01ec1e8394" width="350">
+      <img src="BEFORE_IMAGE_URL" width="350"><br>
+      <sub>능력치는 다르지만 색상은 모두 동일</sub>
     </td>
     <td align="center">
       <b>After</b><br>
-      <img src="https://github.com/user-attachments/assets/39417a98-0dca-495e-9aa9-222bcd50f6f8" width="350">
+      <img src="AFTER_IMAGE_URL" width="350"><br>
+      <sub>좀비 타입별로 색상이 명확하게 구분</sub>
     </td>
   </tr>
 </table>
-
 
 ### 🛠 해결 방법  
 - Setup() 메서드를 타입별 색상을 **외부에서 전달받는 방식**으로 수정
