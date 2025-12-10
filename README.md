@@ -280,7 +280,7 @@ Zombie Survivor 개발 과정에서 발생한 주요 오류와 해결 과정을 
 ### 🔥 증상  
 - `NullReferenceException`
 - `UnassignedReferenceException: gunPivot has not been assigned`
-
+- 아래와 같은 콘솔 에러 로그가 반복적으로 출력됨 
 <img width="695" height="292" alt="콘솔창 오류" src="https://github.com/user-attachments/assets/3b8ba4ae-2812-432e-86b2-c9041da2e266" />
 
 ### ⚠️ 원인  
@@ -311,7 +311,6 @@ PlayerShooter 스크립트 내부의 **gunPivot 변수가 인스펙터에서 연
 - 좀비가 생성되지 않음  
 - 생성되었지만 AI가 움직이지 않음  
 - NavMesh 밖에서 생성되어 공중에 떠있거나 낙하
-
 - 아래와 같은 콘솔 에러 로그가 반복적으로 출력됨
 <img width="611" alt="스폰 오류" src="https://github.com/user-attachments/assets/a9c0307a-41a0-4ee4-92ae-050e55fd7796" />
 
