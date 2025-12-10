@@ -236,121 +236,116 @@ https://github.com/user-attachments/assets/bef531fd-9a1c-4fd1-a139-e49d242622d3
 ---
 # 🧟 Zombie Survivor (좀비 서바이버)
 
-### 🎮 프로젝트 소개  
+## 🎮 프로젝트 소개  
 Unity 6 기반으로 제작한 탑다운 슈터 생존 게임입니다.  
-플레이어는 사방에서 몰려오는 좀비를 사격하여 처치하고,  
-가능한 오래 살아남아 점수를 쌓는 것이 목표입니다.  
-
+플레이어는 몰려오는 좀비를 사격하여 처치하고, **최대한 오래 생존하는 것**이 목표입니다.  
 좀비는 NavMeshAgent 기반 AI로 플레이어를 추적하며,  
-각 좀비 타입(빠른/느린/일반)이 서로 다른 능력치를 가집니다.
+각 좀비 타입(빠른 / 느린 / 일반)이 서로 다른 능력치를 가집니다.
 
 ---
 
-### 🎯 구현 목표  
-- 총기 발사 & 탄환 충돌 처리 구현  
-- NavMesh 기반 좀비 추적 AI 개발  
-- 체력 UI 및 점수 UI 구성  
-- 생존 시간 기반 난이도(웨이브) 증가 시스템 구현  
-- 포스트 프로세싱을 통한 시각적 완성도 향상  
+## 🎯 구현 목표  
+- 총기 발사 및 탄환 충돌 처리  
+- NavMesh 기반 좀비 추적 AI 구현  
+- 체력/UI/점수/생존 시간 관리  
+- 웨이브 기반 난이도 상승 구조  
+- Post Processing을 통한 시각적 완성도 강화  
+
 
 ---
 
 ### 📌 구현 내용 
 
-- 플레이어 이동 및 탑다운 카메라 구성  
-- 총기 시스템: 무기 스탯 설정, 탄환 발사 & 충돌 판정, 발사 이펙트 구현  
-- 생명체 시스템: LivingEntity 기반으로 체력·피격·사망 처리 구조 통합  
-- 좀비 AI: NavMeshAgent로 플레이어 추적, 타입별 능력치(빠른/느린/일반) 적용  
-- UI 구성: 체력바, 점수, 생존 시간, 게임 오버 화면 구현  
-- 웨이브/난이도 시스템: 시간이 지날수록 좀비 수·능력치 증가  
-- 후처리(Post Processing): Bloom, Vignette 등을 활용해 전체 분위기 강화  
+- 플레이어 WASD 이동 및 탑다운 카메라 구성  
+- GunData 기반 총기 스탯 구성 및 발사/충돌 처리  
+- LivingEntity 기반 생명체(플레이어·좀비) 체력/피격/사망 구조 통합  
+- NavMeshAgent를 활용한 좀비 AI 추적  
+- 좀비 타입별 능력치 차등 적용  
+- 체력바, 점수 UI, 게임 오버 UI 구성  
+- 생존 시간 증가에 따른 좀비 난이도 상승  
+- Bloom / Vignette 등 후처리(Post Processing) 적용  
 
 ---
 
-## 🎥 시연 영상  
-> 아래 영상들은 작업 과정별 트러블슈팅 및 구현 결과를 정리한 자료입니다.
-
-- 🎬 좀비 슈팅 게임 – 총 구현  
-- 🎬 콘솔창 오류 해결 과정  
-- 🎬 탄막슈팅 게임  
-- 🎬 좀비 색상 미적용 오류  
-- 🎬 좀비 서바이버 구현 완료  
-- 🎬 좀비 스폰 오류 해결  
-
-(추후 GIF or YouTube 링크 삽입 가능)
-
----
 
 ## 🛠 트러블슈팅(Troubleshooting)
 
 Zombie Survivor 개발 과정에서 발생한 주요 오류와 해결 과정을 정리했습니다.  
-자세한 내용은 영상 자료 참고.
+각 문제는 **원인 → 해결 과정 → Before/After 비교** 순으로 구성하여 가독성을 높였습니다.
 
 ---
 
-### 🔧 1) 콘솔창 오류 – gunPivot 미할당 오류
+## 🔧 1) 콘솔창 오류 – gunPivot 미할당 오류  
 
-**증상**  
-- `NullReferenceException`  
+### 🔥 증상  
+- `NullReferenceException`
 - `UnassignedReferenceException: gunPivot has not been assigned`
-- 
+
 <img width="695" height="292" alt="콘솔창 오류" src="https://github.com/user-attachments/assets/3b8ba4ae-2812-432e-86b2-c9041da2e266" />
 
-**원인**  
-- PlayerShooter 스크립트의 gunPivot이 인스펙터에서 연결되지 않음
+### ⚠️ 원인  
+PlayerShooter 스크립트 내부의 **gunPivot 변수가 인스펙터에서 연결되지 않음**.
 
-<img width="681" height="517" alt="before" src="https://github.com/user-attachments/assets/025804e3-908f-4521-b03a-1f2a7205954f" />
+### 📌 Before  
+<img width="681" alt="before" src="https://github.com/user-attachments/assets/025804e3-908f-4521-b03a-1f2a7205954f" />
 
-<img width="697" height="520" alt="after" src="https://github.com/user-attachments/assets/02213087-b110-4cef-b684-8c9ec285958f" />
+### ✅ After  
+<img width="697" alt="after" src="https://github.com/user-attachments/assets/02213087-b110-4cef-b684-8c9ec285958f" />
 
-**해결**  
-
-- 플레이어 오브젝트 하위의 GunPivot Transform을  
-  PlayerShooter 컴포넌트의 gunPivot 슬롯에 드래그 & 드롭하여 연결
+### 🛠 해결 방법  
+- PlayerShooter 스크립트의 **Gun Pivot 슬롯에 Gun Pivot(Transform)** 할당  
+- Left/Right Hand Mount도 올바르게 연결  
 
 ---
 
-### 🔧 1) 좀비 스폰 오류 – NavMesh & 위치 문제
+## 🔧 2) 좀비 스폰 오류 – NavMesh & 위치 문제  
 
-**문제 상황**  
-- 좀비가 생성되지 않거나, 생성되어도 움직이지 않음  
-- 공중 또는 NavMesh 밖에서 생성되는 문제 발생
+### 🔥 증상  
+- 좀비가 생성되지 않음  
+- 생성되었지만 AI가 움직이지 않음  
+- NavMesh 밖에서 생성되어 공중에 떠있거나 낙하
 
-<img width="611" height="36" alt="스폰 오류" src="https://github.com/user-attachments/assets/a9c0307a-41a0-4ee4-92ae-050e55fd7796" />
+<img width="611" alt="스폰 오류" src="https://github.com/user-attachments/assets/a9c0307a-41a0-4ee4-92ae-050e55fd7796" />
 
-
+### 📹 문제 상황 영상 
 https://github.com/user-attachments/assets/7827e1f1-a107-4835-91a9-67514f62f503
 
 
-**해결 과정**  
-1. **NavMesh Bake 재확인**  
-2. **Zombie 프리팹의 스폰 위치가 NavMesh 위인지 확인**  
-3. 플레이 중 Hierarchy에서 실제 생성 여부 확인  
+### 🛠 해결 방법  
+1. Navigation 창에서 **NavMesh Bake 재확인**  
+2. Zombie 프리팹이 **NavMesh 위에서 생성되는지** 확인  
+3. Hierarchy에서 실제 생성 여부 확인  
+4. 스폰 포인트 위치 조정 후 정상 작동 확인  
 
-**결과**  
-- 좀비 생성 정상화  
-- 각 타입(빠른/느린/일반) 능력치가 정상적으로 구분되도록 수정 완료
+### ✅ 결과  
+- 좀비 정상 생성  
+- 좀비 타입별 능력치 적용 정상화  
 
 ---
 
-### 🔧 3) 좀비 색상 적용 오류 – 색상 초기화 문제
+## 🔧 3) 좀비 색상 적용 오류 – 색상 초기화 문제  
 
+### 🔥 증상  
+- 좀비 능력치는 다르지만 **색상이 모두 동일하게 출력됨**
 
+### ⚠ 원인  
+Zombie.cs의 `Setup()` 내부에서 **기본 색상이 고정 적용**되어 타입별 색상이 덮어씌워짐.
+
+### 📹 문제 상황 영상
 https://github.com/user-attachments/assets/7799d45a-40a1-4e64-9998-0ae4c7f8672b
 
+---
 
-**증상**  
-- 좀비 능력치는 다른데, 화면에서는 색이 모두 동일하게 출력됨
 
-**원인**  
-- Zombie.cs의 `Setup()` 내부에서 기본 색상으로 항상 덮어쓰기되는 로직 존재
+### 📌 Before  
+<img width="517" alt="before2" src="https://github.com/user-attachments/assets/3fd98c33-2791-48db-a564-7a01ec1e8394" />
 
-**해결**  
-- Setup 메서드를 타입별 색상을 외부에서 전달받도록 변경  
-<img width="517" height="219" alt="before2" src="https://github.com/user-attachments/assets/3fd98c33-2791-48db-a564-7a01ec1e8394" />
+### ✅ After  
+<img width="731" alt="after2" src="https://github.com/user-attachments/assets/39417a98-0dca-495e-9aa9-222bcd50f6f8" />
 
-<img width="731" height="444" alt="after 2" src="https://github.com/user-attachments/assets/39417a98-0dca-495e-9aa9-222bcd50f6f8" />
 
+### 🛠 해결 방법  
+- Setup() 메서드를 타입별 색상을 **외부에서 전달받는 방식**으로 수정
 
 ---
 
