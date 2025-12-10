@@ -114,7 +114,7 @@
 
 ---
 
-### 🎮 닷지 : 3D 총알 피하기
+# 🎮 닷지 : 3D 총알 피하기
 
 이 챕터에서는 Unity 기초 기능을 활용해 3D 회피 게임을 완성했다.  
 탄알 생성, 충돌 처리, 점수 UI, 게임 전체 흐름 관리 등 게임 개발의 기본 구조를 실습하며 전반적인 게임 제작 과정을 경험했다.
@@ -234,6 +234,140 @@ https://github.com/user-attachments/assets/bef531fd-9a1c-4fd1-a139-e49d242622d3
 
 
 ---
+# 🧟 Zombie Survivor (좀비 서바이버)
+
+## 🎮 프로젝트 소개  
+Unity 6 기반으로 제작한 탑다운 슈터 생존 게임입니다.  
+플레이어는 몰려오는 좀비를 사격하여 처치하고, **최대한 오래 생존하는 것**이 목표입니다.  
+좀비는 NavMeshAgent 기반 AI로 플레이어를 추적하며,  
+각 좀비 타입(빠른 / 느린 / 일반)이 서로 다른 능력치를 가집니다.
+
+---
+
+## 🎯 구현 목표  
+- 총기 발사 및 탄환 충돌 처리  
+- NavMesh 기반 좀비 추적 AI 구현  
+- 체력/UI/점수/생존 시간 관리  
+- 웨이브 기반 난이도 상승 구조  
+- Post Processing을 통한 시각적 완성도 강화  
+
+
+---
+
+### 📌 구현 내용 
+
+- 플레이어 WASD 이동 및 탑다운 카메라 구성  
+- GunData 기반 총기 스탯 구성 및 발사/충돌 처리  
+- LivingEntity 기반 생명체(플레이어·좀비) 체력/피격/사망 구조 통합  
+- NavMeshAgent를 활용한 좀비 AI 추적  
+- 좀비 타입별 능력치 차등 적용  
+- 체력바, 점수 UI, 게임 오버 UI 구성  
+- 생존 시간 증가에 따른 좀비 난이도 상승  
+- Bloom / Vignette 등 후처리(Post Processing) 적용  
+
+---
+
+
+## 🛠 트러블슈팅(Troubleshooting)
+
+Zombie Survivor 개발 과정에서 발생한 주요 오류와 해결 과정을 정리했습니다.  
+각 문제는 **원인 → 해결 과정 → Before/After 비교** 순으로 구성하여 가독성을 높였습니다.
+
+---
+
+## 🔧 1) 콘솔창 오류 – gunPivot 미할당 오류  
+
+### 🔥 증상  
+- `NullReferenceException`
+- `UnassignedReferenceException: gunPivot has not been assigned`
+- 아래와 같은 콘솔 에러 로그가 반복적으로 출력됨 
+<img width="695" height="292" alt="콘솔창 오류" src="https://github.com/user-attachments/assets/3b8ba4ae-2812-432e-86b2-c9041da2e266" />
+
+### ⚠️ 원인  
+PlayerShooter 스크립트 내부의 **gunPivot 변수가 인스펙터에서 연결되지 않음**.
+
+<table>
+  <tr>
+    <td align="center">
+      <b>Before</b><br>
+      <img src="https://github.com/user-attachments/assets/025804e3-908f-4521-b03a-1f2a7205954f" width="350">
+    </td>
+    <td align="center">
+      <b>After</b><br>
+      <img src="https://github.com/user-attachments/assets/02213087-b110-4cef-b684-8c9ec285958f" width="350">
+    </td>
+  </tr>
+</table>
+
+### 🛠 해결 방법  
+- PlayerShooter 스크립트의 **Gun Pivot 슬롯에 Gun Pivot(Transform)** 할당  
+- Left/Right Hand Mount도 올바르게 연결  
+
+---
+
+## 🔧 2) 좀비 스폰 오류 – NavMesh & 위치 문제  
+
+### 🔥 증상  
+- 좀비가 생성되지 않음  
+- 생성되었지만 AI가 움직이지 않음  
+- NavMesh 밖에서 생성되어 공중에 떠있거나 낙하
+- 아래와 같은 콘솔 에러 로그가 반복적으로 출력됨
+<img width="611" alt="스폰 오류" src="https://github.com/user-attachments/assets/a9c0307a-41a0-4ee4-92ae-050e55fd7796" />
+
+### 📹 문제 상황 영상 
+https://github.com/user-attachments/assets/7827e1f1-a107-4835-91a9-67514f62f503
+
+
+### 🛠 해결 방법  
+1. Navigation 창에서 **NavMesh Bake 재확인**  
+2. Zombie 프리팹이 **NavMesh 위에서 생성되는지** 확인  
+3. Hierarchy에서 실제 생성 여부 확인  
+4. 스폰 포인트 위치 조정 후 정상 작동 확인  
+
+### ✅ 결과  
+- 좀비 정상 생성  
+- 좀비 타입별 능력치 적용 정상화  
+
+---
+
+## 🔧 3) 좀비 색상 적용 오류 – 색상 초기화 문제  
+
+### 🔥 증상  
+- 좀비 능력치는 다르지만 **색상이 모두 동일하게 출력됨**
+
+### ⚠ 원인  
+Zombie.cs의 `Setup()` 내부에서 **기본 색상이 고정 적용**되어 타입별 색상이 덮어씌워짐.
+
+### 📹 문제 상황 영상
+https://github.com/user-attachments/assets/7799d45a-40a1-4e64-9998-0ae4c7f8672b
+
+---
+
+<table>
+  <tr>
+    <td align="center">
+      <b>Before</b><br>
+      <img src="https://github.com/user-attachments/assets/3fd98c33-2791-48db-a564-7a01ec1e8394" width="350">
+    </td>
+    <td align="center">
+      <b>After</b><br>
+      <img src="https://github.com/user-attachments/assets/39417a98-0dca-495e-9aa9-222bcd50f6f8" width="350">
+    </td>
+  </tr>
+</table>
+
+
+### 🛠 해결 방법  
+- Setup() 메서드를 타입별 색상을 **외부에서 전달받는 방식**으로 수정
+
+---
+
+## 🎥 시연 영상 
+
+https://github.com/user-attachments/assets/500ac948-896d-47bb-ba2a-636b2f558966
+
+
+---
 
 <a id="section-6"></a>
 ## 🛠 6. 기술 스택 (Tech Stack)
@@ -270,18 +404,30 @@ https://github.com/user-attachments/assets/bef531fd-9a1c-4fd1-a139-e49d242622d3
 ## 🚀 8. 향후 계획 (Future Plans)
 
 ### 📌 단기 계획
-- **유니티 Chapter 2** 학습  
-  - 탑다운 슈터 게임 – 좀비 서바이버 제작 예정  
-- **2인 멀티플레이 네트워크 게임 – 퐁(Pong)** 구현 예정  
-  - 기본 네트워크 구조 이해 및 실시간 동기화 로직 학습 목표
+- **유니티 Chapter 2 학습 심화**
+  - 유니티 엔진 구조 이해 및 C# 활용 능력 강화
+- **2인 멀티플레이 네트워크 게임 – 퐁(Pong) 제작**
+  - 기본 네트워크 동기화 구조 학습
+  - 간단한 실시간 멀티플레이 로직 구현 경험 목표
+
+---
 
 ### 📌 중기 계획
-- 기본 학습을 완전히 마친 후,  
-  **팀 자체 기획으로 새로운 게임을 제작**할 예정  
-  (장르 및 콘셉트는 논의 후 확정)
+- 팀 내부 논의를 통해 **자체 기획 게임 프로젝트** 제작
+  - 장르 및 아트 스타일 선정
+  - 기획–개발–빌드까지 전 과정을 팀 단위로 경험
+- Unity Design Pattern, ScriptableObject 등  
+  게임 아키텍처 구조 이해 및 적용 연습
+
+---
 
 ### 📌 장기 계획
-- 실습한 프로젝트를 지속적으로 리팩터링하고,  
-  완성도를 높이는 업데이트를 진행  
-- GitHub 포트폴리오를 확장하여  
-  Unity 기반 개인/팀 프로젝트 아카이브 구축
+- 프로젝트별 리팩터링 및 고도화 진행  
+  - 성능 최적화, 코드 구조 개선, 확장성 확보
+- GitHub 기반 **Unity 포트폴리오 아카이브 구축**
+  - 개인·팀 게임 프로젝트 지속 업로드
+  - 개발 과정을 시각화한 README 작성 체계 확립
+- 멀티플레이, AI, 시네머신, UI/UX 등  
+  다양한 Unity 기능을 활용한 **완성도 높은 게임 개발 역량 확보**
+
+---
