@@ -348,12 +348,12 @@ https://github.com/user-attachments/assets/7799d45a-40a1-4e64-9998-0ae4c7f8672b
   <tr>
     <td align="center">
       <b>Before</b><br>
-      <img src="BEFORE_IMAGE_URL" width="350"><br>
+      <img src="https://github.com/user-attachments/assets/3fd98c33-2791-48db-a564-7a01ec1e8394" width="350"><br>
       <sub>능력치는 다르지만 색상은 모두 동일</sub>
     </td>
     <td align="center">
       <b>After</b><br>
-      <img src="AFTER_IMAGE_URL" width="350"><br>
+      <img src="https://github.com/user-attachments/assets/39417a98-0dca-495e-9aa9-222bcd50f6f8" width="350"><br>
       <sub>좀비 타입별로 색상이 명확하게 구분</sub>
     </td>
   </tr>
