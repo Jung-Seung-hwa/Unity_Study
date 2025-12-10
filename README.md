@@ -286,11 +286,18 @@ Zombie Survivor 개발 과정에서 발생한 주요 오류와 해결 과정을 
 ### ⚠️ 원인  
 PlayerShooter 스크립트 내부의 **gunPivot 변수가 인스펙터에서 연결되지 않음**.
 
-### 📌 Before  
-<img width="681" alt="before" src="https://github.com/user-attachments/assets/025804e3-908f-4521-b03a-1f2a7205954f" />
-
-### ✅ After  
-<img width="697" alt="after" src="https://github.com/user-attachments/assets/02213087-b110-4cef-b684-8c9ec285958f" />
+<table>
+  <tr>
+    <td align="center">
+      <b>Before</b><br>
+      <img src="https://github.com/user-attachments/assets/025804e3-908f-4521-b03a-1f2a7205954f" width="350">
+    </td>
+    <td align="center">
+      <b>After</b><br>
+      <img src="https://github.com/user-attachments/assets/02213087-b110-4cef-b684-8c9ec285958f" width="350">
+    </td>
+  </tr>
+</table>
 
 ### 🛠 해결 방법  
 - PlayerShooter 스크립트의 **Gun Pivot 슬롯에 Gun Pivot(Transform)** 할당  
@@ -336,12 +343,18 @@ https://github.com/user-attachments/assets/7799d45a-40a1-4e64-9998-0ae4c7f8672b
 
 ---
 
-
-### 📌 Before  
-<img width="517" alt="before2" src="https://github.com/user-attachments/assets/3fd98c33-2791-48db-a564-7a01ec1e8394" />
-
-### ✅ After  
-<img width="731" alt="after2" src="https://github.com/user-attachments/assets/39417a98-0dca-495e-9aa9-222bcd50f6f8" />
+<table>
+  <tr>
+    <td align="center">
+      <b>Before</b><br>
+      <img src="https://github.com/user-attachments/assets/3fd98c33-2791-48db-a564-7a01ec1e8394" width="350">
+    </td>
+    <td align="center">
+      <b>After</b><br>
+      <img src="https://github.com/user-attachments/assets/39417a98-0dca-495e-9aa9-222bcd50f6f8" width="350">
+    </td>
+  </tr>
+</table>
 
 
 ### 🛠 해결 방법  
